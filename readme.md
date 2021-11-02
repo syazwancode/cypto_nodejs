@@ -7,3 +7,7 @@
 5. Keypairs
 6. Asymmetric Encryption
 7. Signing
+
+### Reference
+
+- https://fireship.io/lessons/node-crypto-examples/
