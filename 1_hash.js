@@ -11,3 +11,5 @@ const hash2 = hash(password);
 
 // each hash will result in the same value. not very secure for password.
 console.log(hash1 === hash2);
+
+console.log(hash1);

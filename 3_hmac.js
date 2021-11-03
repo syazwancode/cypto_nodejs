@@ -2,14 +2,14 @@
 // hash but also need a password / key, eg: JWT
 const { createHmac } = require("crypto");
 
-const key = "super-secret!";
-const message = "boo 👻";
+const key = "this-is-my-secret-key!";
+const message = "hello there";
 
 const hmac = createHmac("sha256", key).update(message).digest("hex");
 
 const hmac1 = createHmac("sha256", key).update(message).digest("hex");
 
-const key2 = "other-password";
+const key2 = "my-other-password";
 const hmac2 = createHmac("sha256", key2).update(message).digest("hex");
 
 // same key will generate same hash
